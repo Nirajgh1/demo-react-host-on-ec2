@@ -1,0 +1,19 @@
+version: 0.0
+os: linux
+
+files:
+  - source: /
+    destination: /home/Ubuntu/server
+
+permissions:
+  - object: /
+    pattern: "**"
+    owner: Ubuntu
+    group: Ubuntu
+
+hooks:
+
+
+ApplicationStart:
+    commands:
+        - npm start
