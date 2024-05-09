@@ -3,7 +3,7 @@ os: linux
 
 files:
   - source: /
-    destination: /home/Ubuntu/server
+    destination: /home/Ubuntu/
 
 permissions:
   - object: /
@@ -15,5 +15,5 @@ hooks:
 
 
 ApplicationStart:
-    commands:
-        - npm start
+   -location: Scripts/app-start.sh
+           
